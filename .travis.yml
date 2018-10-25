@@ -1,0 +1,9 @@
+sudo: required #tell Travis we need sudo rights
+services:
+  - docker #tell travis we need a docker running
+
+before_install: docker build -t sheldono/thevenue -f Dockerfile.dev . # using travis we want to tag our image.  Tag using docker_user_name/proj_name - Could be anything
+
+script: # commands necessary to run our test suite
+  # docker run 'theimage' override_default_command -- --coverage(this is because our test suite doesnt naturally exit.  this is a work around)
+  - docker run sheldono/thevenue npm run test -- --coverage
