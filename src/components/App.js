@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class App extends Component {
   render() {
-    return <div>testing github flow</div>;
+    return <div>testing github flow6</div>;
   }
 }
 
