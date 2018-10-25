@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class App extends Component {
   render() {
-    return <div>App3</div>;
+    return <div>kicking elasticbeanstalk in the clouded butt</div>;
   }
 }
 
